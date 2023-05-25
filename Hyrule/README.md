@@ -12,4 +12,4 @@
 ### This search tool will allow you to search for something inside of the compendium, say a monster like a Moblin and have it pull the relevant information to display on the screen. It will display the picture of said search entry along with it's name, description, common locations, and also it's drops. It will also have a responsive design.
 
 # Wireframes
-![Wireframe of a switch](/images/Wireframe1.png)
+![Wireframe of a switch](/Hyrule/images/Wireframe1.png)
