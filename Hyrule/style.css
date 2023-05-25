@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    /* border: 2px solid gold; */
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/link.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#switch {
+    width: 1000px;
+    height: 321px;
+    display: grid;
+    grid-template-columns: 125px 750px 125px;
+}
+
+#switch-left {
+    width: 125px;
+    background-color: red;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+#switch-middle {
+    width: 750px;
+    display: grid;
+    background-color: black;
+    grid-template-columns: 375px 375px;
+}
+
+#switch-right {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#switch-right {
+    background-color: red;
+}
+
+#circle-one {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    top: 15%;
+    left: 31%;
+    background-color: black;
+}
+
+#circle-two {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    top: 32%;
+    background-color: black;
+}
+
+#circle-three {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    top: 40%;
+    right: 45%;
+    background-color: black;
+}
+
+#circle-four {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    top: 30%;
+    left: 55%;
+    background-color: black;
+}
+
+#circle-five {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    top: 38%;
+    left: 9%;
+    background-color: black;
+}
+
+#circle-six {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    top: 15%;
+    left: 31%;
+    background-color: black;
+}
+
+#circle-seven {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    top: 23%;
+    right: 15%;
+    background-color: black;
+}
+
+#circle-eight {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    top: 23%;
+    right: 5%;
+    background-color: black;
+}
+
+#circle-nine {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    top: 18%;
+    left: 32%;
+    background-color: black;
+}
+
+#circle-ten {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    top: 38%;
+    background-color: black;
+}
