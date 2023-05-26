@@ -37,19 +37,10 @@ body {
     box-shadow: 5px 5px 5px 5px black;
 }
 
-#screen-right {
-    display: flex;
-    flex-direction: column;
-
-}
-
 #switch-right {
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     box-shadow: 5px 5px 5px 5px black;
-}
-
-#switch-right {
     background-color: red;
 }
 
