@@ -26,18 +26,27 @@ body {
     background-color: red;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
+    box-shadow: 5px 5px 5px 5px black;
 }
 
 #switch-middle {
     width: 750px;
     display: grid;
-    background-color: black;
+    background-image:repeating-radial-gradient(dimgray, black);
     grid-template-columns: 375px 375px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+#screen-right {
+    display: flex;
+    flex-direction: column;
+
 }
 
 #switch-right {
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
+    box-shadow: 5px 5px 5px 5px black;
 }
 
 #switch-right {
@@ -140,4 +149,13 @@ body {
     position: relative;
     top: 38%;
     background-color: black;
+}
+
+#result > div{
+    text-transform: capitalize;
+    padding-top: 10px
+}
+
+b {
+    color: gold;
 }
