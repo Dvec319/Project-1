@@ -9,7 +9,10 @@ $form.on('submit', (event) => {
 	const entry = formData.get('entry').toLowerCase();
 
 	const $screen = $('#screen-left');
-	const $result = $('#result');
+    const $name = $('#name');
+    const $description = $('#description');
+    const $locations = $('#locations');
+    const $drops = $('#drops');
 
     // emptying out the input field
     $('[name="entry"')[0].value = ""
@@ -21,19 +24,21 @@ $form.on('submit', (event) => {
 			$screen.html(
 				`<img src=${response.data.image} alt=${response.data.name}>`
 			);
-			$result.html(`
-                <div>
-                    <b>Name: ${response.data.name}</b>
-                </div>
-                <div>
-                    <b>Description: ${response.data.description}</b>
-                </div>
-                <div>
-                    <b>Locations: ${response.data.common_locations}</b>
-                </div>
-                <div>
-                    <b>Drops: ${response.data.drops}</b>
-                </div>
-            `);
-		});
+			$name.html(`Name: ${response.data.name}`)
+            $description.html(`Description: ${response.data.description}`)
+            if (response.data.common_locations === null) {
+                $locations.html("Locations: N/A")
+            } else {$locations.html(`Locations: ${response.data.common_locations}`)}
+            if (response.data.drops === undefined) {
+                $drops.html("Drops: N/A")
+            } else {$drops.html(`Drops: ${response.data.drops}`)}
+		})
+		.catch(() => {
+			$screen.empty()
+			$name.empty()
+			$description.empty()
+			$locations.empty()
+			$drops.empty()
+			alert(`${entry} isn't in this API. Please try searching for something else!`)
+		})
 });

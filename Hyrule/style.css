@@ -18,11 +18,11 @@ body {
     width: 1000px;
     height: 321px;
     display: grid;
-    grid-template-columns: 125px 750px 125px;
+    grid-template-columns: 12.5% 75% 12.5%;
 }
 
 #switch-left {
-    width: 125px;
+    width: 100%;
     background-color: red;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -30,7 +30,7 @@ body {
 }
 
 #switch-middle {
-    width: 750px;
+    width: 100%;
     display: grid;
     background-image:repeating-radial-gradient(dimgray, black);
     grid-template-columns: 375px 375px;
@@ -38,6 +38,7 @@ body {
 }
 
 #switch-right {
+    width: 100%;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     box-shadow: 5px 5px 5px 5px black;
@@ -144,9 +145,7 @@ body {
 
 #result > div{
     text-transform: capitalize;
-    padding-top: 10px
-}
-
-b {
+    padding-top: 10px;
     color: gold;
+    font-size: 20px;
 }
