@@ -14,6 +14,10 @@ body {
     background-size: cover;
 }
 
+img {
+    max-width: 100%;
+}
+
 #switch {
     width: 1000px;
     height: 321px;
@@ -32,7 +36,7 @@ body {
 #switch-middle {
     width: 100%;
     display: grid;
-    background-image:repeating-radial-gradient(dimgray, black);
+    background-image:radial-gradient(dimgray, black);
     grid-template-columns: 375px 375px;
     box-shadow: 5px 5px 5px 5px black;
 }
@@ -143,9 +147,59 @@ body {
     background-color: black;
 }
 
-#result > div{
+.result > div{
+    display: flex;
+    flex-wrap: wrap;
     text-transform: capitalize;
     padding-top: 10px;
     color: gold;
     font-size: 20px;
+}
+
+#mobile {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(images/TOTK.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #switch {
+        display:none;
+    }
+
+    #mobile {
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 45% 45% 10%;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+
+    .result {
+        background-color: black;
+    }
+
+    .result > div {
+        display: block;
+        padding: 0;
+    }
+
+    #bottom {
+        margin: auto; 
+    }
+    
 }

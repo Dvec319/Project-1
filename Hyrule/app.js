@@ -9,13 +9,15 @@ $form.on('submit', (event) => {
 	const entry = formData.get('entry').toLowerCase();
 
 	const $screen = $('#screen-left');
-    const $name = $('#name');
-    const $description = $('#description');
-    const $locations = $('#locations');
-    const $drops = $('#drops');
+    const $name = $('.name');
+    const $description = $('.description');
+    const $locations = $('.locations');
+    const $drops = $('.drops');
+	const $mobileScreen = $('#mobile-screen')
 
     // emptying out the input field
-    $('[name="entry"')[0].value = ""
+    $('[name="entry"]')[0].value = ""
+	$('[name="entry"]')[1].value = '';
 
 	$.ajax(`https://botw-compendium.herokuapp.com/api/v2/entry/${entry}`)
     .then(
@@ -32,6 +34,9 @@ $form.on('submit', (event) => {
             if (response.data.drops === undefined) {
                 $drops.html("Drops: N/A")
             } else {$drops.html(`Drops: ${response.data.drops}`)}
+			$mobileScreen.html(
+				`<img src=${response.data.image} alt=${response.data.name}>`
+			);
 		})
 		.catch(() => {
 			$screen.empty()
