@@ -1,4 +1,11 @@
 const $form = $('form');
+const $screen = $('#screen-left');
+const $name = $('.name');
+const $description = $('.description');
+const $locations = $('.locations');
+const $drops = $('.drops');
+const $mobileScreen = $('#mobile-screen');
+const $dialog = $('#error');
 
 $form.on('submit', (event) => {
 	// prevent the page from refreshing
@@ -8,16 +15,9 @@ $form.on('submit', (event) => {
 	// get the value from the generated data where the name value is "monster"
 	const entry = formData.get('entry').toLowerCase();
 
-	const $screen = $('#screen-left');
-    const $name = $('.name');
-    const $description = $('.description');
-    const $locations = $('.locations');
-    const $drops = $('.drops');
-	const $mobileScreen = $('#mobile-screen')
-
     // emptying out the input field
     $('[name="entry"]')[0].value = ""
-	$('[name="entry"]')[1].value = '';
+	$('[name="entry"]')[1].value = "";
 
 	$.ajax(`https://botw-compendium.herokuapp.com/api/v2/entry/${entry}`)
     .then(
