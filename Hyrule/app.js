@@ -6,6 +6,7 @@ const $locations = $('.locations');
 const $drops = $('.drops');
 const $mobileScreen = $('#mobile-screen');
 const $dialog = $('#error');
+const $button = $('#ok');
 
 $form.on('submit', (event) => {
 	// prevent the page from refreshing
@@ -44,6 +45,10 @@ $form.on('submit', (event) => {
 			$description.empty()
 			$locations.empty()
 			$drops.empty()
-			alert(`${entry} isn't in this API. Please try searching for something else!`)
+			$dialog.show()
+			$button.on('click', (event) => {
+				event.preventDefault()
+				$dialog.hide()
+			})
 		})
 });
