@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap');
+
 * {
     box-sizing: border-box;
     /* border: 2px solid gold; */
@@ -152,8 +154,10 @@ img {
     flex-wrap: wrap;
     text-transform: capitalize;
     padding-top: 10px;
+    padding-right: 5px;
     color: gold;
     font-size: 20px;
+    font-family: 'Aoboshi One', serif;
 }
 
 #mobile {
@@ -196,6 +200,7 @@ img {
     .result > div {
         display: block;
         padding: 0;
+        font-family: 'Aoboshi One', serif;
     }
 
     #bottom {

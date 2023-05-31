@@ -46,8 +46,7 @@ $form.on('submit', (event) => {
 			$locations.empty()
 			$drops.empty()
 			$dialog.show()
-			$button.on('click', (event) => {
-				event.preventDefault()
+			$button.on('click', () => {
 				$dialog.hide()
 			})
 		})

@@ -6,6 +6,7 @@
 - CSS3
 - Javascript
 - jQuery
+- Google Fonts
 - Hyrule Compendium API
 
 # Features
