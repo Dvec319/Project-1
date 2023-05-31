@@ -19,3 +19,6 @@
 
 # Where To Find It
 You can find the Hyrule Compendium Searcher [here!](https://hyrule-compendium-searcher.onrender.com/)
+
+# Installation
+### Simply clone down this repo and open it with VS Code. Make sure you have the Live Server Extension installed and then just click go live to open it up.
