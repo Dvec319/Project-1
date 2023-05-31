@@ -168,7 +168,7 @@ img {
     display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 915px) {
     body {
         margin: 0;
         height: 100vh;
