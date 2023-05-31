@@ -108,6 +108,7 @@ img {
     top: 15%;
     left: 31%;
     background-color: black;
+    color: white;
 }
 
 #circle-seven {
@@ -118,6 +119,7 @@ img {
     top: 23%;
     right: 15%;
     background-color: black;
+    color: white;
 }
 
 #circle-eight {
@@ -128,6 +130,7 @@ img {
     top: 23%;
     right: 5%;
     background-color: black;
+    color: white;
 }
 
 #circle-nine {
@@ -135,9 +138,10 @@ img {
     width: 30px;
     border-radius: 50%;
     position: relative;
-    top: 18%;
-    left: 32%;
+    top: 16%;
+    left: 31%;
     background-color: black;
+    color: white;
 }
 
 #circle-ten {
