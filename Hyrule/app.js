@@ -6,7 +6,8 @@ const $locations = $('.locations');
 const $drops = $('.drops');
 const $mobileScreen = $('#mobile-screen');
 const $dialog = $('#error');
-const $button = $('#ok');
+const $okButton = $('#ok');
+const $bButton = $('#circle-nine')
 
 $form.on('submit', (event) => {
 	// prevent the page from refreshing
@@ -46,8 +47,16 @@ $form.on('submit', (event) => {
 			$locations.empty()
 			$drops.empty()
 			$dialog.show()
-			$button.on('click', () => {
+			$okButton.on('click', () => {
 				$dialog.hide()
 			})
 		})
 });
+
+$bButton.on("click", () => {
+	$screen.empty();
+	$name.empty();
+	$description.empty();
+	$locations.empty();
+	$drops.empty();
+})
