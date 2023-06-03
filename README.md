@@ -21,7 +21,7 @@
 
 # Expected Timeline
 
-### Over the next few days I will spend my time getting the styling and responsive design of the website ready before injecting any javascript into the project itself. I should be able to get the javascript squared away in one day and after that I will attempt to incoporate some bonuse features. This could be search history displaying previous searches the user has made.
+### Over the next few days I will spend my time getting the styling and responsive design of the website ready before injecting any javascript into the project itself. I should be able to get the javascript squared away in one day and after that I will attempt to incorporate some bonus features. This could be search history displaying previous searches the user has made.
 
 # Outcome
 
