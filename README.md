@@ -32,3 +32,6 @@ You can find the Hyrule Compendium Searcher [here!](https://hyrule-compendium-se
 
 # Installation
 ### Simply clone down this repo and open it with VS Code. Make sure you have the Live Server Extension installed and then just click go live to open it up.
+
+# Unsolved Problems
+### I had a really tough time thinking of a nice design for responsive/mobile devices. I talked it over with Kyle and he gave the idea of maybe making a DS or Gameboy Advance but I didn't really see a way to implement it in a way that didn't look way too small or very squished together.
